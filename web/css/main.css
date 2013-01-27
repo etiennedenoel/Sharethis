@@ -121,7 +121,7 @@ q {
 /* CSS
 ************************************************/
 html {
-  background: url('../img/bg.png') repeat;
+  background: url('../img/bg3.png') repeat;
   font: 14px/1.8em Arial, Helvetica, Geneva, sans-serif;
 }
 @media screen and (min-width: 960px) {
@@ -137,7 +137,7 @@ html {
     font-size: 4em;
   }
   header {
-    background-color: #d7d7d7;
+    background: url('../img/bg2.png');
     padding-top: 10px;
     height: 60px;
     margin-bottom: 50px;
@@ -145,7 +145,6 @@ html {
     -webkit-box-shadow: 0px 3px 3px 0px #656565;
     -o-box-shadow: 0px 3px 3px 0px #656565;
     box-shadow: 0px 3px 3px 0px #656565;
-    filter: progid:dximagetransform.microsoft.shadow(color=#656565, Direction=180, Strength=3);
   }
   header #deconnect {
     float: right;
@@ -300,33 +299,7 @@ html {
     -moz-border-radius-topright: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background: #45484d;
-    /* Old browsers */
-  
-    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ1NDg0ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
-    /* FF3.6+ */
-  
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #45484d), color-stop(100%, #000000));
-    /* Chrome,Safari4+ */
-  
-    background: -webkit-linear-gradient(top, #45484d 0%, #000000 100%);
-    /* Chrome10+,Safari5.1+ */
-  
-    background: -o-linear-gradient(top, #45484d 0%, #000000 100%);
-    /* Opera 11.10+ */
-  
-    background: -ms-linear-gradient(top, #45484d 0%, #000000 100%);
-    /* IE10+ */
-  
-    background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
-    /* W3C */
-  
-    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#45484d', endColorstr='#000000', GradientType=0);
-    /* IE6-8 */
-  
+    background: url('../img/bg2.png');
     margin-bottom: -10px;
     display: inline-block;
     padding: 20px 20px 30px;
@@ -737,7 +710,6 @@ html {
     margin-left: 10px;
   }
   header {
-    background-color: #d7d7d7;
     padding-top: 10px;
     height: 60px;
     margin-bottom: 50px;
@@ -745,7 +717,6 @@ html {
     -webkit-box-shadow: 0px 3px 3px 0px #656565;
     -o-box-shadow: 0px 3px 3px 0px #656565;
     box-shadow: 0px 3px 3px 0px #656565;
-    filter: progid:dximagetransform.microsoft.shadow(color=#656565, Direction=180, Strength=3);
   }
   header #deconnect {
     float: right;
@@ -902,33 +873,6 @@ html {
     -moz-border-radius-topright: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background: #45484d;
-    /* Old browsers */
-  
-    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ1NDg0ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
-    /* FF3.6+ */
-  
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #45484d), color-stop(100%, #000000));
-    /* Chrome,Safari4+ */
-  
-    background: -webkit-linear-gradient(top, #45484d 0%, #000000 100%);
-    /* Chrome10+,Safari5.1+ */
-  
-    background: -o-linear-gradient(top, #45484d 0%, #000000 100%);
-    /* Opera 11.10+ */
-  
-    background: -ms-linear-gradient(top, #45484d 0%, #000000 100%);
-    /* IE10+ */
-  
-    background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
-    /* W3C */
-  
-    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#45484d', endColorstr='#000000', GradientType=0);
-    /* IE6-8 */
-  
     margin-bottom: -10px;
     display: inline-block;
     padding: 20px 0px 30px;
@@ -1339,7 +1283,6 @@ html {
     margin-left: 10px;
   }
   header {
-    background-color: #d7d7d7;
     padding-top: 10px;
     height: 60px;
     margin-bottom: 50px;
@@ -1347,7 +1290,6 @@ html {
     -webkit-box-shadow: 0px 3px 3px 0px #656565;
     -o-box-shadow: 0px 3px 3px 0px #656565;
     box-shadow: 0px 3px 3px 0px #656565;
-    filter: progid:dximagetransform.microsoft.shadow(color=#656565, Direction=180, Strength=3);
   }
   header #deconnect {
     float: right;
@@ -1504,33 +1446,6 @@ html {
     -moz-border-radius-topright: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background: #45484d;
-    /* Old browsers */
-  
-    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ1NDg0ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
-    /* FF3.6+ */
-  
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #45484d), color-stop(100%, #000000));
-    /* Chrome,Safari4+ */
-  
-    background: -webkit-linear-gradient(top, #45484d 0%, #000000 100%);
-    /* Chrome10+,Safari5.1+ */
-  
-    background: -o-linear-gradient(top, #45484d 0%, #000000 100%);
-    /* Opera 11.10+ */
-  
-    background: -ms-linear-gradient(top, #45484d 0%, #000000 100%);
-    /* IE10+ */
-  
-    background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
-    /* W3C */
-  
-    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#45484d', endColorstr='#000000', GradientType=0);
-    /* IE6-8 */
-  
     margin-bottom: -10px;
     display: inline-block;
     padding: 20px 0px 30px;
@@ -1930,11 +1845,10 @@ html {
     color: white;
     float: left;
     text-shadow: 0px 1px 1px #4d4d4d;
-    font-size: 3em;
+    font-size: 3.5em;
     margin-left: 10px;
   }
   header {
-    background-color: #d7d7d7;
     padding-top: 10px;
     height: 60px;
     margin-bottom: 50px;
@@ -1942,7 +1856,6 @@ html {
     -webkit-box-shadow: 0px 3px 3px 0px #656565;
     -o-box-shadow: 0px 3px 3px 0px #656565;
     box-shadow: 0px 3px 3px 0px #656565;
-    filter: progid:dximagetransform.microsoft.shadow(color=#656565, Direction=180, Strength=3);
   }
   header #deconnect {
     float: right;
@@ -1977,14 +1890,14 @@ html {
     font-weight: bold;
     text-shadow: 0px 0px 1px #4d4d4d;
     margin-bottom: 10px;
+    margin-left: 10px;
   }
   #formulaireConnex {
     margin-right: 10%;
   }
   #formulaireConnex,
   #formulaireInscription {
-    float: left;
-    width: 40%;
+    width: 90%;
     display: block;
     position: relative;
   }
@@ -2086,8 +1999,8 @@ html {
   
   }
   #formulaireInscription {
-    float: left;
-    width: 40%;
+    margin-top: 20px;
+    width: 90%;
     display: block;
   }
   #formShare {
@@ -2099,33 +2012,6 @@ html {
     -moz-border-radius-topright: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background: #45484d;
-    /* Old browsers */
-  
-    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ1NDg0ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
-    /* FF3.6+ */
-  
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #45484d), color-stop(100%, #000000));
-    /* Chrome,Safari4+ */
-  
-    background: -webkit-linear-gradient(top, #45484d 0%, #000000 100%);
-    /* Chrome10+,Safari5.1+ */
-  
-    background: -o-linear-gradient(top, #45484d 0%, #000000 100%);
-    /* Opera 11.10+ */
-  
-    background: -ms-linear-gradient(top, #45484d 0%, #000000 100%);
-    /* IE10+ */
-  
-    background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
-    /* W3C */
-  
-    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#45484d', endColorstr='#000000', GradientType=0);
-    /* IE6-8 */
-  
     margin-bottom: -10px;
     display: inline-block;
     padding: 20px 0px 30px;
@@ -2138,7 +2024,7 @@ html {
     background-color: white;
     position: relative;
     height: 25px;
-    width: 50%;
+    width: 60%;
     margin: 0 0 0 10px;
     line-height: 25px;
     text-indent: 5px;
@@ -2514,4 +2400,57 @@ html {
     /* IE6-8 */
   
   }
+}
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot");
+  src: url("../font/fontello.eot?#iefix") format('embedded-opentype'), url("../font/fontello.woff") format('woff'), url("../font/fontello.ttf") format('truetype'), url("../font/fontello.svg#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  opacity: 0.8;
+  /* fix buttons height, for twitter bootstrap */
+
+  line-height: 1em;
+  /* Animation center compensation - magrins should be symmetric */
+
+  /* remove if not needed */
+
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+
+  /* font-size: 120%; */
+
+  /* Uncomment for 3D effect */
+
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+
+}
+.icon-logout:before {
+  content: '\e741';
+}
+/* '' */
+header,
+#formShare,
+footer {
+  background: url('../img/bg2.png');
+}
+footer {
+  height: 80px;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  line-height: 75px;
+  bottom: 0;
 }
