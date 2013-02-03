@@ -29,6 +29,8 @@ class Curling extends CI_Controller {
 
 		$this->load->model('M_Curling');
 
+		$dataLayout['erreur'] = '';
+
 		$dataList['liens'] = $this->M_Curling->lister();
 
 		$dataLayout['vue'] = $this->load->view('lister', $dataList, TRUE);
@@ -57,19 +59,21 @@ class Curling extends CI_Controller {
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_URL, $url);
 		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-		$html = curl_exec($ch);
+		$html = utf8_decode(curl_exec($ch));
 
 		if(!$html){
-			redirect(base_url());
+			$this->session->set_flashdata('erreur','<p class="erreur">Adresse invalide !</p>');
+			redirect('curling');
 		}
 		else{
 			curl_close($ch);
-			$html = utf8_decode($html);
 			$dom = new DOMDocument();
 			@$dom->loadHTML($html);
 
 			$nodes = $dom->getElementsByTagName("title");
 			$dataLayout['title'] = $nodes->item(0)->nodeValue;
+
+			$dataLayout['srcImg'][] = 'http://static.etiennedenoel.be/img/noimage.gif';
 
 			$nodes = $dom->getElementsByTagName("img");
 			foreach($nodes as $node){
@@ -80,16 +84,19 @@ class Curling extends CI_Controller {
 			$dataLayout['lien'] = $this->input->post('url');
 			$nodes = $dom->getElementsByTagName("meta");
 
+			$dataLayout['description'] = "Aucune description disponible";
+
 			foreach($nodes as $node){
 				if(strtolower($node->getAttribute("name") == "description")){
 					$dataLayout['description'] = $node->getAttribute("content");
 				}
 			}
 
-			$this->load->helper('form');
-			$dataLayout['vue'] = $this->load->view('listing', $dataLayout, true);
-			$this->load->view('layout', $dataLayout);
+
 		}
+		$this->load->helper('form');
+		$dataLayout['vue'] = $this->load->view('listing', $dataLayout, true);
+		$this->load->view('layout', $dataLayout);
 
 	}
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
 	<title>ShareThis</title>
@@ -11,32 +11,37 @@
 
 </head>
 <body>
-	<header>
-		<section class="content">
-			<?php echo anchor('curling/lister','<h1>Sharethis</h1>',array('title' => 'ShareThis')); ?>
+	<div class="wrapper">
+		<div id="container">
+			<header>
+				<section>
+
+					<?php echo anchor('curling/lister','<h1>Sharethis</h1>',array('title' => 'ShareThis')); ?>
 
 
-			<?php if($this->session->userdata('logged_in')): ?>
+					<?php if($this->session->userdata('logged_in')): ?>
 
-				<div id="deconnect">
-					<?php echo anchor('connex/deconnexion','<i class="icon-logout"></i> Déconnexion',array('title' => 'Se déconnecter')); ?>
-				</div>
-			<?php endif; ?>
+						<div id="deconnect">
+							<?php echo anchor('connex/deconnexion','<i class="icon-logout"></i> Déconnexion',array('title' => 'Se déconnecter')); ?>
+						</div>
+					<?php endif; ?>
 
 
-		</section>
+				</section>
 
-	</header>
-	<div id="container">
+			</header>
 
-		<?php echo $vue;?>
 
+			<?php echo $vue;?>
+			<div class="push"></div>
+		</div>
+		<footer>
+			<section class="content">
+				<h4>ShareThis - Conception Etienne Denoel &copy;</h4>
+			</section>
+		</footer>
 	</div>
-	<footer>
-		<section class="content">
-			<h4>ShareThis - Conception Etienne Denoel &copy;</h4>
-		</section>
-	</footer>
+
 	<script src="<?= base_url() ?>web/js/jquery.js" type="text/javascript"></script>
     <script src="<?= base_url() ?>web/js/script.js" type="text/javascript"></script>
 </body>

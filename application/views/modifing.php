@@ -5,19 +5,19 @@
             <section class="contenuArticle">
 
                 <div class="champ">
-                    <label for="title">titre</label>
+                    <label for="title">Titre&nbsp;:</label>
                     <input type="text" name="titre" value="<?php echo $titre ?>"/>
                 </div>
 
                 <div class="champ">
-                    <label for="lien">lien</label>
+                    <label for="lien">Lien&nbsp;:</label>
                     <input type="text" name="lien" value="<?php echo $lien ?>"/>
                 </div>
 
 
             </section>
             <div class="champ">
-                <label class='labelDesc' for="description">Description</label>
+                <label class='labelDesc' for="description">Description&nbsp;:</label>
                 <textarea name="description" /><?php echo $description ?> </textarea>
             </div>
 

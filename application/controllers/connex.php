@@ -30,6 +30,7 @@ class Connex extends CI_Controller {
         else{
             $utilisateur = array('logged_in' => FALSE);
             $this->session->set_userdata($utilisateur);
+            $this->session->set_flashdata('erreurConnex', '<p class="erreur">Mauvais identifiant et/ou mot de passe</p>');
             redirect('connex');
         }
 	}
@@ -43,6 +44,10 @@ class Connex extends CI_Controller {
 			$password = $this->input->post('passwordInscI1');
 
 		}
+        else{
+            $this->session->set_flashdata('erreurInsc', '<p class="erreur">Erreur dans la confirmation du mot de passe !</p>');
+            redirect('connex');
+        }
 
 		$this->load->model('M_connex');
 
@@ -58,6 +63,7 @@ class Connex extends CI_Controller {
         else{
             $utilisateur = array('logged_in' => FALSE);
             $this->session->set_userdata($utilisateur);
+            $this->session->set_flashdata('erreurInsc', '<p class="erreur">Erreur dans la confirmation du mot de passe !</p>');
             redirect('connex');
         }
 

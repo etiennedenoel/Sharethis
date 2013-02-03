@@ -10,9 +10,9 @@
     <?php echo form_close(); ?>
 </section>
 <section class="content">
-
+    <?php echo $this->session->flashdata('erreur'); ?>
     <?php foreach ($liens as $lien): ?>
-        <article>
+        <article itemscope="" itemtype="http://schema.org/WebPage">
             <?php echo form_open('curling/lister'); ?>
                 <input type="hidden" name="id" value="<?php echo $lien->id ?>" />
                 <input type="hidden" name="url" value="<?php echo $lien->url ?>" />
@@ -21,19 +21,19 @@
                 <input type="hidden" name="title" value="<?php echo $lien->title ?>" />
             <?php echo form_close(); ?>
             <div class="imageArticle">
-                <?php  echo '<img src="' . $lien->src . '" />' ?>
+                <?php  echo '<img  itemprop="image" alt="Image provenant de ' . $lien->title . '" src="' . $lien->src . '" />' ?>
             </div>
             <section class="parametres">
                 <?php echo anchor('curling/supprimer/'.$lien->id, ' ', array( 'id' => $lien->id, 'class' => 'delete', 'title'=>'Supprimer ce message')) ?>
                 <?php echo anchor('curling/preview/'.$lien->id, ' ', array('class' => 'update', 'title'=>'Modifier ce message')) ?>
             </section>
-            <section class="contenuArticle">
-                <h3>
+            <section class="contenuArticle" >
+                <h3 itemprop="name" >
                     <?php echo $lien->title ?>
                 </h3>
 
-                <p class="lien"> <?php echo ($lien->url) ?></p>
-                <p><?php echo $lien->desc ?></p>
+                <p class="lien" itemprop="url" > <?php echo ($lien->url) ?></p>
+                <p itemprop="description" ><?php echo $lien->desc ?></p>
             </section>
 
 
